@@ -1,0 +1,15 @@
+{
+  "name": "Calculadora",
+  "short_name": "Calc",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#222222",
+  "theme_color": "#0a84ff",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/10310/10310245.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
