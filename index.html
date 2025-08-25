@@ -2,7 +2,11 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora</title>
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0a84ff">
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -122,5 +126,14 @@
     }
   </script>
 
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(reg => console.log('Service Worker registrado', reg))
+      .catch(err => console.error('Error al registrar Service Worker:', err));
+  }
+</script>
+
+  
 </body>
 </html>
